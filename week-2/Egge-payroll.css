@@ -1,3 +1,10 @@
+/* 
+Title: css_border.asp (https://www.w3schools.com/css/css_border.asp)
+Author: w3schools.com
+Date: 10/30/2022
+Description: An article using code snippets to explain how to use CSS Borders
+*/
+
 ul {
-    border: dotted 1px red;
+  border: dotted 1px red;
 }
