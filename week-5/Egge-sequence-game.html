@@ -1,0 +1,83 @@
+<!-- 
+Title: Web 231 Assign_5.doxs
+Author: Richard Krasso
+Date: 11/15/2022
+Description: The instructions for Assignment 5 – Sequence Game
+ -->
+
+<!-- 
+Title: tag_select.asp (https://www.w3schools.com/tags/tag_select.asp) 
+Author: w3schools.com
+Date: 11/15/2022
+Description: An article using code snippets to explain how to use the "select" tag via HTML
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week-5</title>
+
+    <!-- Link to stylesheets and fonts -->
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+    <link rel="stylesheet" type="text/css" href="../site.css" />
+    <link rel="stylesheet" type="text/css" href="Egge-sequence-game.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- The script tag has the "defer" attribute, so it is able to function without issue in the head-->
+    <script src="Egge-sequence-game.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Corresponds with exhibit 1 -->
+      <h1 class="app-header">Welcome to the sequence game!</h1>
+
+      <!-- Corresponds with exhibits 2, 3, and 4 -->
+      <div id="card-example">
+        <div class="card">
+          <div class="card-title">Sequence Selection Form</div>
+          <div class="card-content">
+            <div class="form">
+              <div class="form-field">
+                <label for="sequence">Choose a number sequence:</label>
+                <select name="sequence" id="sequence" class="drop-down-menu">
+                  <option value="select">--Select--</option>
+                  <option value="fibonacci">Fibonacci Sequence</option>
+                  <option value="even">Even Numbers</option>
+                  <option value="odd">Odd Numbers</option>
+                </select>
+              </div>
+
+              <!-- Corresponds with exhibits 5 -->
+              <div class="form-field">
+                <button
+                  class="btn btn-primary full-width"
+                  id="btnDisplaySequence"
+                >
+                  Display Sequence
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <!-- Corresponds with exhibit 6 -->
+        <div class="card">
+          <div class="card-title">Sequence Results</div>
+          <div class="card-content">
+            <p id="txtSequenceResults"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Corresponds with exhibit 7 -->
+      <a class="return-home" href="../index.html">Return</a>
+    </div>
+  </body>
+</html>

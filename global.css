@@ -10,6 +10,12 @@ Author: Richard Krasso
 Date: 10/30/2022
 Description: explains the CSS standards used in this course
 */
+/* 
+Title: Web 231 Assign_5.doxs
+Author: Richard Krasso
+Date: 11/15/2022
+Description: The instructions for Assignment 5 – Sequence Game
+*/
 
 /* copied from WEB 200 */
 
@@ -70,7 +76,8 @@ Description: explains the CSS standards used in this course
   color: #000;
 }
 
-.input {
+.input,
+.drop-down-menu {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
