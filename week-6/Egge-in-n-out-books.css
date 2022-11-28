@@ -1,0 +1,34 @@
+/* 
+Title: Web 231 Assign_6.doxs
+Author: Richard Krasso
+Date: 11/27/2022
+Description: The instructions for Assignment 6 – In-N-Out-Books
+*/
+
+/* Corresponds with 5.h.1 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* Corresponds with 5.h.2 */
+th {
+  padding: 12px 0 12px;
+
+  text-align: left;
+  background-color: #4f3674;
+  color: #fff;
+}
+
+/* Corresponds with 5.h.4 */
+tr:hover {
+  color: #4f3674;
+  background-color: #d6a800;
+}
+
+/* Corresponds with 5.h.3 */
+td,
+th {
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,125 @@
+<!-- 
+Title: Web 231 Assign_6.doxs
+Author: Richard Krasso
+Date: 11/27/2022
+Description: The instructions for Assignment 6 – In-N-Out-Books
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week-6</title>
+
+    <!-- Link to stylesheets and fonts -->
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+    <link rel="stylesheet" type="text/css" href="../site.css" />
+    <link rel="stylesheet" type="text/css" href="Egge-in-n-out-books.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- The script tag has the "defer" attribute, so it is able to function without issue in the head-->
+    <script src="Egge-in-n-out-books.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Corresponds with exhibit 1 -->
+      <h1 class="app-header">Welcome to In-N-Out-Books</h1>
+
+      <div id="card-example">
+
+      <!-- Corresponds with exhibits 2, 3, 4, and 5 -->
+        <div class="card">
+          <div class="card-title">My Favorites</div>
+          <div class="card-content">
+            <div class="form">
+              <div class="form-field">
+                <label for="favoriteList">Choose a listing</label>
+                <select
+                  name="favoriteList"
+                  id="favoriteList"
+                  class="drop-down-menu"
+                >
+                  <option value="select">--Select--</option>
+                  <option value="books">Top 3 Favorite Books</option>
+                  <option value="authors">Top 3 Favorite Authors</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <button
+                  class="btn btn-primary full-width"
+                  id="btnDisplayListing"
+                >
+                  Display Listing
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <br />
+          <!-- Corresponds with exhibit 6 -->
+          <a class="return-home" href="../index.html">Return</a>
+          
+        <br />
+
+        <div class="card" id="favorite-books">
+          <div class="card-title">Top 3 Favorite Books</div>
+          <div class="card-content">
+            <table >
+              <tr>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Pages</th>
+              </tr>
+              <tr>
+                <td id="txtTheFellowshipOfTheRingISBN">_</td>
+                <td id="txtTheFellowshipOfTheRingTitle">_</td>
+                <td id="txtTheFellowshipOfTheRingPages">_</td>
+              </tr>
+              <tr>
+                <td id="txtTheTwoTowersISBN">_</td>
+                <td id="txtTheTwoTowersTitle">_</td>
+                <td id="txtTheTwoTowersPages">_</td>
+              </tr>
+              <tr>
+                <td id="txtReturnOfTheKingISBN">_</td>
+                <td id="txtReturnOfTheKingTitle">_</td>
+                <td id="txtReturnOfTheKingPages">_</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+        <div class="card" id="favorite-authors">
+          <div class="card-title">Top 3 Favorite Books</div>
+          <div class="card-content">
+            <table>
+          <tr>
+            <th>Name</th>
+            <th>Genre</th>
+          </tr>
+          <tr>
+            <td id="txtFirstAuthorName">_</td>
+            <td id="txtFirstAuthorGenre">_</td>
+          </tr>
+          <tr>
+            <td id="txtSecondAuthorName">_</td>
+            <td id="txtSecondAuthorGenre">_</td>
+          </tr>
+          <tr>
+            <td id="txtThirdAuthorName">_</td>
+            <td id="txtThirdAuthorGenre">_</td>
+          </tr>
+        </table>
+      </div>
+        
+      </div>
+    </div>
+    
+  </body>
+</html>
