@@ -1,0 +1,191 @@
+<!-- 
+Title: Web 231 Assign_7.doxs
+Author: Richard Krasso
+Date: 12/4/2022
+Description: The instructions for Assignment 7 – Javazon
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week-7</title>
+
+    <!-- Link to stylesheets and fonts -->
+    <link rel="stylesheet" type="text/css" href="../global.css" />
+    <link rel="stylesheet" type="text/css" href="../site.css" />
+    <link rel="stylesheet" type="text/css" href="Egge-javazon.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- The script tag has the "defer" attribute, so it is able to function without issue in the head-->
+    <script src="Egge-javazon.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+
+        <!--Corresponds with 1-->
+      <h1 class="app-header">Welcome to the Javazon App!</h1>
+
+      <!--Corresponds with 2, 3, 4, and 5-->
+      <div id="card-example">
+        <div class="card">
+          <div class="card-title">Javazon Selection Form</div>
+          <div class="card-content">
+            <div class="form">
+              <div class="form-field">
+                <label for="listing">Choose a listing</label>
+                <select name="listing" id="listing" class="drop-down-menu">
+                  <option value="select">--Select--</option>
+                  <option value="products">Products</option>
+                  <option value="services">Services</option>
+                  <option value="employees">Employees</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <button
+                  class="btn btn-primary full-width"
+                  id="btnDisplayListing"
+                >
+                  Display Listing
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Corresponds with 5.j.1 6-->
+        <a class="return-home" href="../index.html">Return</a>
+        
+        <br />
+        <div class="card" id="products">
+          <div class="card-title">Javazon Products</div>
+          <div class="card-content">
+            <table>
+              <tr>
+                <th>Product ID</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Value</th>
+              </tr>
+              <tr>
+                  <td id="txtFirstProductId">_</td>
+                  <td id="txtFirstProductDescription">_</td>
+                <td id="txtFirstProductPrice">_</td>
+                <td id="txtFirstProductQuantity">_</td>
+                <td id="txtFirstProductTotalValue">_</td>
+              </tr>
+              <tr>
+                <td id="txtSecondProductId">_</td>
+                <td id="txtSecondProductDescription">_</td>
+                <td id="txtSecondProductPrice">_</td>
+                <td id="txtSecondProductQuantity">_</td>
+                <td id="txtSecondProductTotalValue">_</td>
+              </tr>
+              <tr>
+                <td id="txtThirdProductId">_</td>
+                <td id="txtThirdProductDescription">_</td>
+                <td id="txtThirdProductPrice">_</td>
+                <td id="txtThirdProductQuantity">_</td>
+                <td id="txtThirdProductTotalValue">_</td>
+              </tr>
+              <tr>
+                <td id="txtFourthProductId">_</td>
+                <td id="txtFourthProductDescription">_</td>
+                <td id="txtFourthProductPrice">_</td>
+                <td id="txtFourthProductQuantity">_</td>
+                <td id="txtFourthProductTotalValue">_</td>
+              </tr>
+              <tr>
+                <td id="txtFifthProductId">_</td>
+                <td id="txtFifthProductDescription">_</td>
+                <td id="txtFifthProductPrice">_</td>
+                <td id="txtFifthProductQuantity">_</td>
+                <td id="txtFifthProductTotalValue">_</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="card" id="services">
+          <div class="card-title">Javazon Services</div>
+          <div class="card-content">
+            <table>
+              <tr>
+                <th>Service ID</th>
+                <th>Description</th>
+                <th>Hourly Rate</th>
+                <th>Minimum Billable Hours</th>
+              </tr>
+              <tr>
+                <td id="txtFirstServiceId">_</td>
+                <td id="txtFirstServiceDescription">_</td>
+                <td id="txtFirstServiceRate">_</td>
+                <td id="txtFirstServiceMin">_</td>
+              </tr>
+              <tr>
+                <td id="txtSecondServiceId">_</td>
+                <td id="txtSecondServiceDescription">_</td>
+                <td id="txtSecondServiceRate">_</td>
+                <td id="txtSecondServiceMin">_</td>
+              </tr>
+              <tr>
+                <td id="txtThirdServiceId">_</td>
+                <td id="txtThirdServiceDescription">_</td>
+                <td id="txtThirdServiceRate">_</td>
+                <td id="txtThirdServiceMin">_</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="card" id="employees">
+          <div class="card-title">Javazon Employees</div>
+          <div class="card-content">
+            <table>
+              <tr>
+                <th>Employee ID</th>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Salary</th>
+              </tr>
+              <tr>
+                <td id="txtFirstEmployeeId">_</td>
+                <td id="txtFirstEmployeeLastName">_</td>
+                <td id="txtFirstEmployeeFirstName">_</td>
+                <td id="txtFirstEmployeeSalary">_</td>
+              </tr>
+              <tr>
+                <td id="txtSecondEmployeeId">_</td>
+                <td id="txtSecondEmployeeLastName">_</td>
+                <td id="txtSecondEmployeeFirstName">_</td>
+                <td id="txtSecondEmployeeSalary">_</td>
+              </tr>
+              <tr>
+                <td id="txtThirdEmployeeId">_</td>
+                <td id="txtThirdEmployeeLastName">_</td>
+                <td id="txtThirdEmployeeFirstName">_</td>
+                <td id="txtThirdEmployeeSalary">_</td>
+              </tr>
+              <tr>
+                <td id="txtFourthEmployeeId">_</td>
+                <td id="txtFourthEmployeeLastName">_</td>
+                <td id="txtFourthEmployeeFirstName">_</td>
+                <td id="txtFourthEmployeeSalary">_</td>
+              </tr>
+              <tr>
+                <td id="txtFifthEmployeeId">_</td>
+                <td id="txtFifthEmployeeLastName">_</td>
+                <td id="txtFifthEmployeeFirstName">_</td>
+                <td id="txtFifthEmployeeSalary">_</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
