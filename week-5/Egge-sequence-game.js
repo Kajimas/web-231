@@ -16,9 +16,7 @@ document.getElementById(`btnDisplaySequence`).onclick = function () {
   sequenceSelect();
 };
 
-
 function sequenceSelect() {
-
   //Corresponds with exhibit 5.b
   let choice = document.getElementById(`sequence`).value;
 
