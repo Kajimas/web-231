@@ -1,0 +1,19 @@
+/* 
+Title: Web 231 Assign_9.doxs
+Author: Richard Krasso
+Date: 12/18/2022
+Description: The instructions for Assignment 9.2 – Final: Card Game
+*/
+
+/* This apples to the icon in the center of each card */
+.player-card {
+  text-align: center;
+}
+
+/* Without this styling, each card will have several styling issues, with an unreasonable width being the most notable */
+#player-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  grid-gap: 10px;
+}
